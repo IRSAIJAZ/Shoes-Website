@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.butn{
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 6px;
+}
+.iconn{
+    font-size: 25px;
+    margin: 12px;
+}
+.butnn{
+    width: 85%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 9px;
+    border-radius: 6px;
+}
+ .lebal{
+    position: relative;
+ }
+ .lebal label{
+    position: absolute;
+    top: 9px;
+    left: 25px;
+    background-color: white;
+    font-size: 20px;
+ }
+ .txt{
+    width: 86%;
+    height: 60px;
+    border-radius: 5px;
+
+ }
+ 
+.butnnn{
+    margin: 5px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    height: 70px;
+    border-radius: 6px;
+    
+}
