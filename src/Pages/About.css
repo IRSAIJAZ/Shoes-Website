@@ -1,1 +1,81 @@
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
 
+.about-container h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.about-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #fa5400;
+}
+
+.about-content {
+    display: grid;
+    gap: 2rem;
+}
+
+.mission, .history, .values {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.mission:hover, .history:hover, .values:hover {
+    transform: translateY(-5px);
+}
+
+.mission h2, .history h2, .values h2 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.asterisk {
+    font-style: italic;
+    color: #fa5400;
+    margin-top: 0.5rem;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.values li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #fa5400;
+}
+
+@media (max-width: 768px) {
+    .about-container h1 {
+        font-size: 2rem;
+    }
+    
+    .mission h2, .history h2, .values h2 {
+        font-size: 1.5rem;
+    }
+}
